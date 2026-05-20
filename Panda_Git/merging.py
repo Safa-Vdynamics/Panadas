@@ -10,7 +10,7 @@ df3 = df1.merge(df2, how="inner", on="number")
 
 df4 = pd.concat([df1, df2]).reset_index(drop=True)
 
-
+# drop duplicate
 df5 = pd.concat([df1, df2]).drop_duplicates().reset_index(drop=True)
 
 
